@@ -318,6 +318,10 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
 .logo {
   width: 1rem;
   height: 1rem;
