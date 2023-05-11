@@ -13,12 +13,13 @@ body {
 
 h1 {
     color: $primary-color;
-    margin: rem(80px) auto 0;
+    margin: rem(80px) auto rem(45px);
     text-align: center;
     font-size: rem(32px);
     line-height: rem(40px);
     @include mq(medium) {
         margin-top: rem(169px);
+        margin-bottom: rem(78px);
         font-size: rem(40px);
         line-height: rem(50px);
     }

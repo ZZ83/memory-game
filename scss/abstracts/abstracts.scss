@@ -23,6 +23,14 @@ $secondary-text-color: #838391;
     }
 }
 
+/********************** Border Radius Placeholders **********************/
+%br-10 {
+    border-radius: rem(10px);
+}
+%br-26 {
+    border-radius: rem(26px);
+}
+
 /********************** Flexbox Placeholders **********************/
 %flex {
     display: flex;
