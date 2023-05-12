@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.selectMode {
+    margin-bottom: rem(24px);
+    @include mq(medium) {
+        margin-bottom: rem(32px);
+    }
+    &__header {
+        margin-bottom: rem(11px);
+        color: #7191A5;
+        font-size: rem(15px);
+        line-height: rem(19px);
+        @include mq(medium) {
+            margin-bottom: rem(16px);
+            font-size: rem(20px);
+            line-height: rem(25px);
+        }
+    }
+    &__inner {
+        display: flex;
+        gap: 3.9%;
+        @include mq(medium) {
+            gap: 5.5%;
+        }
+        &.-player {
+            @include mq(medium) {
+                gap: 4%;
+            }
+        }
+    }
+}

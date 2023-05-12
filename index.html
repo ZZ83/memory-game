@@ -14,12 +14,37 @@
 	<body>
 		<!-- Game setup start -->
 		<main>
-			<section>
-				<h1>memory</h1>
-				<div class="main-menu">
+			<h1>memory</h1>
+			<div class="mainMenu">
 
+				<div class="selectMode">
+					<h2 class="selectMode__header">Select Theme</h2>
+					<div class="selectMode__inner">
+						<button class="btn -menu -active">Numbers</button>
+						<button class="btn -menu">Icons</button>
+					</div>
 				</div>
-			</section>
+
+				<div class="selectMode">
+					<h2 class="selectMode__header">Number of Players</h2>
+					<div class="selectMode__inner -player">
+						<button class="btn -menu -active">1</button>
+						<button class="btn -menu">2</button>
+						<button class="btn -menu">3</button>
+						<button class="btn -menu">4</button>
+					</div>
+				</div>
+
+				<div class="selectMode">
+					<h2 class="selectMode__header">Grid Size</h2>
+					<div class="selectMode__inner">
+						<button class="btn -menu -active">4x4</button>
+						<button class="btn -menu">6x6</button>
+					</div>
+				</div>
+
+				<button class="btn -menu -start">Start Game</button>
+			</div>
 		</main>
 
 		<!-- Select Theme

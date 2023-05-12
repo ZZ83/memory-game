@@ -7,15 +7,19 @@
 }
 
 body {
-    background-color: $secondary-color;
+    background-color: $primary-dark-color;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
+h2 {
+    margin: 0;
+}
+
 h1 {
-    color: $primary-color;
     margin: rem(80px) auto rem(45px);
-    text-align: center;
     font-size: rem(32px);
+    color: $primary-color;
+    text-align: center;
     line-height: rem(40px);
     @include mq(medium) {
         margin-top: rem(169px);
@@ -26,4 +30,8 @@ h1 {
     @include mq(large) {
         margin-top: rem(154px);
     }
+}
+
+button {
+    padding: 0;
 }

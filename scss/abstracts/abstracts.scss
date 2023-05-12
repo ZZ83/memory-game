@@ -1,8 +1,10 @@
 /********************** Color Variables **********************/
 $primary-color:        #FCFCFC;
-$secondary-color:      #152938;
-$primary-text-color:   #ffffff;
-$secondary-text-color: #838391;
+$primary-dark-color:   #152938;
+$secondary-dark-color: #304859;
+$primary-accent-color: #FDA214;
+$primary-btn-color:    #BCCED9;
+$primary-hover-color:  #6395B8;
 
 /********************** Convert Pixes to Rems Function **********************/
 @function rem($size) {
@@ -64,4 +66,8 @@ $secondary-text-color: #838391;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.highlight {
+    background-color: #FDA214;
 }

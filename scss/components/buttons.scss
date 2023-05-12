@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+.btn {
+    border: none;
+    background-color: $primary-btn-color;
+    color: $primary-color;
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-hover-color;
+    }
+    &.-active {
+        background-color: $secondary-dark-color;
+    }
+    &.-menu {
+        width: 100%;
+        height: rem(40px);
+        @extend %br-26; 
+        @include mq(medium) {
+            height: rem(52px);
+            font-size: rem(26px);
+        }
+    }
+    &.-start {
+        margin-top: rem(8px);
+        height: rem(48px);
+        background-color: $primary-accent-color;
+        border-radius: rem(35px);
+        font-size: rem(18px);
+        &:hover {
+            background-color: #FFB84A;
+        }
+        @include mq(medium) {
+            height: rem(70px);
+            font-size: rem(32px);
+            
+        }
+    }
+}
