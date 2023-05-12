@@ -17,15 +17,11 @@ h2 {
 
 h1 {
     margin: rem(80px) auto rem(45px);
-    font-size: rem(32px);
     color: $primary-color;
     text-align: center;
-    line-height: rem(40px);
     @include mq(medium) {
         margin-top: rem(169px);
         margin-bottom: rem(78px);
-        font-size: rem(40px);
-        line-height: rem(50px);
     }
     @include mq(large) {
         margin-top: rem(154px);

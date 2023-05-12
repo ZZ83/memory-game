@@ -1,5 +1,116 @@
 @use '../abstracts' as *;
+.icon2 {
+    font-size:   rem(40px);
+    line-height: rem(50px);
+    @include mq(medium) {
+        font-size:   rem(56px);
+        line-height: rem(69px);
+    } 
+}
+.icon1 {
+    font-size:   rem(24px);
+    line-height: rem(30px);
+    @include mq(medium) {
+        font-size:   rem(44px);
+        line-height: rem(55px);
+    } 
+}
 
-.highlight {
-    background-color: $primary-accent-color;
+.text10 {
+    font-size:   rem(32px);
+    line-height: rem(40px);
+    @include mq(medium) {
+        font-size:   rem(40px);
+        line-height: rem(50px);
+    }
+}
+
+.text9 {
+    font-size:   rem(24px);
+    line-height: rem(30px);
+    @include mq(medium) {
+        font-size:   rem(48px);
+        line-height: rem(60px);
+    }
+}
+
+.text8 {
+    font-size:   rem(24px);
+    line-height: rem(30px);
+    @include mq(large) {
+        font-size:   rem(32px);
+        line-height: rem(40px);
+    }
+}
+
+.text7 {
+    font-size:   rem(20px);
+    line-height: rem(25px);
+    @include mq(medium) {
+        font-size:   rem(32px);
+        line-height: rem(40px);
+    }
+}
+
+.text6 {
+    font-size:   rem(18px);
+    line-height: rem(22px);
+    @include mq(medium) {
+        font-size:   rem(32px);
+        line-height: rem(40px);
+    }
+}
+
+.text5 {
+    font-size:   rem(18px);
+    line-height: rem(22px);
+    @include mq(medium) {
+        font-size:   rem(20px);
+        line-height: rem(25px);
+    }
+}
+
+.text4 {
+    font-size:   rem(16px);
+    line-height: rem(20px);
+    @include mq(medium) {
+        font-size:   rem(26px);
+        line-height: rem(32px);
+    }
+}
+
+.text3 {
+    font-size:   rem(15px);
+    line-height: rem(19px);
+    @include mq(large) {
+        font-size:   rem(18px);
+        line-height: rem(22px);
+    }
+}
+
+.text2 {
+    font-size:   rem(15px);
+    line-height: rem(19px);
+    @include mq(medium) {
+        font-size:   rem(18px);
+        line-height: rem(22px);
+    }
+}
+
+.text1 {
+    font-size:   rem(14px);
+    line-height: rem(17px);
+    @include mq(medium) {
+        font-size:   rem(18px);
+        line-height: rem(22px);
+    }
+}
+
+.text0 {
+    font-size:   rem(13px);
+    line-height: rem(16px);
+    @include mq(medium) {
+        font-size:   rem(18px);
+        line-height: rem(22px);
+    }
 }

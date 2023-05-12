@@ -17,7 +17,6 @@
         @extend %br-26; 
         @include mq(medium) {
             height: rem(52px);
-            font-size: rem(26px);
         }
     }
     &.-start {
@@ -25,13 +24,11 @@
         height: rem(48px);
         background-color: $primary-accent-color;
         border-radius: rem(35px);
-        font-size: rem(18px);
         &:hover {
             background-color: $secondary-hover-color;
         }
         @include mq(medium) {
             height: rem(70px);
-            font-size: rem(32px);
         }
     }
 
@@ -49,4 +46,9 @@
         width: rem(127px);
         font-size: rem(20px);
     }
+
+
+
+
+    
 }
