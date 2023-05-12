@@ -310,6 +310,11 @@ template {
 /********************** Color Variables **********************/
 /********************** Convert Pixes to Rems Function **********************/
 /********************** Media Querie Mixins **********************/
+/********************** Margin Placeholders **********************/
+.mainMenu {
+  margin: 0 auto;
+}
+
 /********************** Border Radius Placeholders **********************/
 .mainMenu {
   border-radius: 0.625rem;
@@ -320,10 +325,6 @@ template {
 }
 
 /********************** Flexbox Placeholders **********************/
-.highlight {
-  background-color: #FDA214;
-}
-
 *,
 *:after,
 *:before {
@@ -370,14 +371,13 @@ button {
 
 .mainMenu {
   width: calc(100% - 3rem);
-  max-width: 40.875rem;
-  margin: 0 auto;
+  max-width: 28.75rem;
   padding: 1.5rem;
   background-color: #FCFCFC;
 }
 @media (min-width: 768px) {
   .mainMenu {
-    gap: 2rem;
+    max-width: 40.875rem;
     padding: 3.5rem;
   }
 }

@@ -7,7 +7,7 @@
     }
     &__header {
         margin-bottom: rem(11px);
-        color: #7191A5;
+        color: $primary-text-color;
         font-size: rem(15px);
         line-height: rem(19px);
         @include mq(medium) {

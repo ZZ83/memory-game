@@ -27,12 +27,11 @@
         border-radius: rem(35px);
         font-size: rem(18px);
         &:hover {
-            background-color: #FFB84A;
+            background-color: $secondary-hover-color;
         }
         @include mq(medium) {
             height: rem(70px);
             font-size: rem(32px);
-            
         }
     }
 }

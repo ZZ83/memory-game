@@ -1,10 +1,12 @@
 /********************** Color Variables **********************/
-$primary-color:        #FCFCFC;
-$primary-dark-color:   #152938;
-$secondary-dark-color: #304859;
-$primary-accent-color: #FDA214;
-$primary-btn-color:    #BCCED9;
-$primary-hover-color:  #6395B8;
+$primary-color:         #FCFCFC;
+$primary-text-color:    #7191A5;
+$primary-dark-color:    #152938;
+$secondary-dark-color:  #304859;
+$primary-accent-color:  #FDA214;
+$primary-btn-color:     #BCCED9;
+$primary-hover-color:   #6395B8;
+$secondary-hover-color: #FFB84A;
 
 /********************** Convert Pixes to Rems Function **********************/
 @function rem($size) {
@@ -23,6 +25,11 @@ $primary-hover-color:  #6395B8;
             @content;
         }
     }
+}
+
+/********************** Margin Placeholders **********************/
+%margin-auto {
+    margin: 0 auto;
 }
 
 /********************** Border Radius Placeholders **********************/
@@ -66,8 +73,4 @@ $primary-hover-color:  #6395B8;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.highlight {
-    background-color: #FDA214;
 }
