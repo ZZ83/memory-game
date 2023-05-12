@@ -34,4 +34,19 @@
             font-size: rem(32px);
         }
     }
+
+    &.-open {
+        width: rem(78px);
+        height: rem(40px);
+        margin: 0;
+        @extend %br-26; 
+        @include mq(medium) {
+           display: none;
+        }
+    }
+
+    &.-test {
+        width: rem(127px);
+        font-size: rem(20px);
+    }
 }

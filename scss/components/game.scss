@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.game {
+    padding: rem(24px);
+    max-width: rem(1110px);
+    @extend %margin-auto;
+    @include mq(medium) {
+        padding: rem(40px) rem(40px) rem(48px);
+    }
+    @include mq(large) {
+        padding-top: rem(68px);
+    }
+}

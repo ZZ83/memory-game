@@ -1,1 +1,15 @@
 @use '../abstracts' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__inner {
+        display: none;
+        @include mq(medium) {
+            display: flex;
+            justify-content: space-between;
+            width: rem(292px);
+        }
+    }
+}
