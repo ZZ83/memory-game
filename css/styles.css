@@ -332,7 +332,7 @@ template {
 }
 
 body {
-  background-color: #152938;
+  background-color: #FCFCFC;
   font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
@@ -454,6 +454,17 @@ button {
   .btn.-start {
     height: 4.375rem;
     font-size: 2rem;
+  }
+}
+
+.logo {
+  width: 5.75rem;
+  height: 1.875rem;
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 9.5625rem;
+    height: 3.125rem;
   }
 }
 
