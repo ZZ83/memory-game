@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.board4x4 {
+    display: grid;
+    gap: rem(13px);
+    grid-template-columns: repeat(4, 1fr);
+    max-width: rem(420px);
+    margin-top: rem(80px);
+    @extend %margin-auto;
+    @include mq(medium) {
+        max-width: rem(532px);
+        margin-top: rem(157px);
+        gap: rem(20px);
+    }
+    @include mq(large) {
+        margin-top: rem(105px);
+    }
+}

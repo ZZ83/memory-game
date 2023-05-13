@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.boardButton {
+    border: none;
+    border-radius: 50%;
+    background-color: $secondary-dark-color;
+    color: $secondary-dark-color;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    &:hover {
+        background-color: $primary-hover-color;
+        color: $primary-hover-color;
+    }
+    &.-fliped {
+        background-color: $primary-btn-color;
+        color: $primary-color;
+        pointer-events: none;
+    }
+    &.-matched {
+        background-color: $primary-accent-color;
+        color: $primary-color;
+    }
+}

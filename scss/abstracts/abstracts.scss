@@ -9,8 +9,6 @@ $primary-btn-color:      #BCCED9;
 $primary-hover-color:    #6395B8;
 $secondary-hover-color:  #FFB84A;
 
-
-
 /********************** Convert Pixes to Rems Function **********************/
 @function rem($size) {
     @return calc($size / 16px * 1rem);
