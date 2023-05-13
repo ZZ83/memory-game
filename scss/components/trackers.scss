@@ -1,0 +1,80 @@
+@use '../abstracts' as *;
+
+.trackers {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(24px);
+    max-width: rem(460px);
+    margin: rem(102px) auto 0;
+    &.-solo {
+        @include mq(medium) {
+            gap: rem(30px);
+            max-width: rem(540px);
+            margin-top: rem(126px);
+        }
+    }
+    &.-multiplayer {
+        @include mq(medium) {
+            gap: rem(11px);
+            max-width: rem(689px);
+            margin-top: rem(126px);
+        }
+        @include mq(large) {
+            gap: rem(30px);
+            max-width: rem(1110px);
+            margin-top: rem(112px);
+        }
+    }
+}
+
+.tracker {
+    position: relative;
+    width: 100%;
+    background-color: $primary-btn-color;
+    border-radius: rem(5px);
+    text-align: center;
+    &.-solo {
+        padding: rem(10px);
+        @include mq(medium) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: rem(72px);
+            padding: rem(24px);
+            border-radius: rem(10px);
+        }
+    }
+    &.-multiplayer {
+        padding: rem(10px) rem(13px) rem(9px) rem(14px);
+        @include mq(medium) {
+            padding: rem(14px) rem(16px) rem(12px);
+            border-radius: rem(10px);
+            text-align: left;
+        }
+        @include mq(large) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: rem(17px) rem(24px) rem(15px) rem(21px);
+         }
+    }
+    &__header {
+        color: $primary-text-color;
+        &.-mobile {
+            margin-bottom: rem(2px);
+            @include mq(medium) {
+            display: none;
+            }
+        }
+        &.-player {
+            display: none;
+            @include mq(medium) {
+                display: block;
+                margin-bottom: rem(5px);
+             }
+        }
+    }
+    &__subheader {
+        color: $secondary-dark-color;
+    }
+}
