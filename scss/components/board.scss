@@ -1,18 +1,32 @@
 @use '../abstracts' as *;
 
-.board4x4 {
+.board {
     display: grid;
-    gap: rem(13px);
-    grid-template-columns: repeat(4, 1fr);
-    max-width: rem(420px);
+    max-width: rem(460px);
     margin-top: rem(80px);
     @extend %margin-auto;
-    @include mq(medium) {
-        max-width: rem(532px);
-        margin-top: rem(157px);
-        gap: rem(20px);
+    &.-fourByFour {
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(12px);
+        @include mq(medium) {
+            max-width: rem(532px);
+            margin-top: rem(157px);
+            gap: rem(20px);
+        }
+        @include mq(large) {
+            margin-top: rem(105px);
+        }
     }
-    @include mq(large) {
-        margin-top: rem(105px);
+    &.-sixBySix {
+        gap: rem(9px);
+        grid-template-columns: repeat(6, 1fr);
+        @include mq(medium) {
+            max-width: rem(572px);
+            margin-top: rem(121px);
+            gap: rem(16px);
+        }
+        @include mq(large) {
+            margin-top: rem(85px);
+        }
     }
 }

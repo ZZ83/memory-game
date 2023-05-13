@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.numbers {
+.text4x4 {
     font-size:   rem(40px);
     line-height: rem(50px);
     @include mq(medium) {
@@ -9,7 +9,7 @@
     } 
 }
 
-.icons {
+.text6x6 {
     font-size:   rem(24px);
     line-height: rem(30px);
     @include mq(medium) {
