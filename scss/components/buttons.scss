@@ -1,54 +1,53 @@
 @use '../abstracts' as *;
 
 .btn {
+    width: 100%;
+    height: rem(40px);
     border: none;
     background-color: $primary-btn-color;
     color: $primary-color;
+    @extend %br-26;
+    @include mq(medium) {
+        height: rem(52px);
+    }
     &:hover {
         cursor: pointer;
         background-color: $primary-hover-color;
     }
-    &.-active {
-        background-color: $secondary-dark-color;
-    }
-    &.-menu {
-        width: 100%;
-        height: rem(40px);
-        @extend %br-26; 
-        @include mq(medium) {
-            height: rem(52px);
-        }
-    }
-    &.-start {
-        margin-top: rem(8px);
-        height: rem(48px);
-        background-color: $primary-accent-color;
-        border-radius: rem(35px);
-        &:hover {
-            background-color: $secondary-hover-color;
-        }
-        @include mq(medium) {
-            height: rem(70px);
-        }
-    }
-
-    &.-open {
+    &.-openMenu {
         width: rem(78px);
         height: rem(40px);
-        margin: 0;
-        @extend %br-26; 
         @include mq(medium) {
            display: none;
         }
     }
-
-    &.-test {
+    &.-restart {
         width: rem(127px);
-        font-size: rem(20px);
     }
-
-
-
-
-    
+    &.-newGame {
+        width: rem(149px);
+        background-color: $secondary-accent-color;
+        color: $secondary-dark-color;
+        &:hover {
+            color: $primary-color;
+            background-color: $primary-hover-color;
+        }
+    }
+    &.-startGame {
+        margin-top: rem(8px);
+        height: rem(48px);
+        border-radius: rem(35px);
+        @include mq(medium) {
+            height: rem(70px);
+        }
+    }
+    &.-accent {
+        background-color: $primary-accent-color;
+        &:hover {
+            background-color: $secondary-hover-color;
+        }
+    }
+    &.-active {
+        background-color: $secondary-dark-color;
+    }
 }
