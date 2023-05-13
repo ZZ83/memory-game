@@ -18,8 +18,8 @@
         }
     }
     &.-sixBySix {
-        gap: rem(9px);
         grid-template-columns: repeat(6, 1fr);
+        gap: rem(9px);
         @include mq(medium) {
             max-width: rem(572px);
             margin-top: rem(121px);

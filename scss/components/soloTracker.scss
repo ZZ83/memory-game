@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.soloTracker {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(25px);
+    max-width: rem(460px);
+    margin-top: rem(102px);
+    @extend %margin-auto;
+    @include mq(medium) {
+        gap: rem(30px);
+        max-width: rem(540px);
+    }
+    &__item {
+        width: 100%;
+        height: rem(70px);
+        padding: rem(10px);
+        background-color: $secondary-accent-color;
+        border-radius: rem(5px);
+        text-align: center;
+        @include mq(medium) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: rem(72px);
+            padding: rem(24px);
+            border-radius: rem(10px);
+        }
+    }
+    &__header {
+        color: $primary-text-color;
+    }
+    &__subheader {
+        color: $secondary-dark-color;
+    }
+}
