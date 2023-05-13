@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+.multiplayerTracker {
+
+    &__mobile {
+        display: flex;
+        gap: rem(24px);
+        max-width: rem(460px);
+        margin-top: rem(102px);
+        text-align: center;
+        @extend %margin-auto;
+        @include mq(medium) {
+            display: none;
+        }
+        
+    }
+    &__player {
+        position: relative;
+        width: 100%;
+        padding: rem(10px) rem(13px) rem(9px) rem(14px);
+        background-color: $secondary-accent-color;
+        border-radius: rem(5px);
+    }
+    &__header {
+        margin-bottom: rem(2px);
+        color: $primary-text-color;
+    }
+    &__subheader {
+        color: $secondary-dark-color;
+    }
+}
+

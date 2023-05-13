@@ -311,7 +311,7 @@ template {
 /********************** Convert Pixes to Rems Function **********************/
 /********************** Media Querie Mixins **********************/
 /********************** Margin Placeholders **********************/
-.soloTracker, .board, .game, .mainMenu {
+.multiplayerTracker__mobile, .soloTracker, .board, .game, .mainMenu {
   margin: 0 auto;
 }
 
@@ -503,6 +503,26 @@ button {
   .text0 {
     font-size: 1.125rem;
     line-height: 1.375rem;
+  }
+}
+
+.triangle {
+  top: -0.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-color: transparent transparent #FDA214 transparent;
+}
+@media (min-width: 768px) {
+  .triangle {
+    top: -0.75rem;
+    border-width: 0 0.75rem 0.75rem 0.75rem;
   }
 }
 
@@ -749,6 +769,33 @@ button {
   color: #7191A5;
 }
 .soloTracker__subheader {
+  color: #304859;
+}
+
+.multiplayerTracker__mobile {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 28.75rem;
+  margin-top: 6.375rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .multiplayerTracker__mobile {
+    display: none;
+  }
+}
+.multiplayerTracker__player {
+  position: relative;
+  width: 100%;
+  padding: 0.625rem 0.8125rem 0.5625rem 0.875rem;
+  background-color: #DFE7EC;
+  border-radius: 0.3125rem;
+}
+.multiplayerTracker__header {
+  margin-bottom: 0.125rem;
+  color: #7191A5;
+}
+.multiplayerTracker__subheader {
   color: #304859;
 }
 
