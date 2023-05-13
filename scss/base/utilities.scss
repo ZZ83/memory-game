@@ -36,6 +36,15 @@
     }
 }
 
+.text80 {
+    font-size:   rem(24px);
+    line-height: rem(30px);
+    @include mq(large) {
+        font-size:   rem(32px);
+        line-height: rem(40px);
+    }
+}
+
 .text8 {
     font-size:   rem(24px);
     line-height: rem(30px);
@@ -130,7 +139,28 @@
     border-width: 0 rem(8px) rem(8px) rem(8px);
     border-color: transparent transparent $primary-accent-color transparent;
     @include mq(medium) {
-        top: rem(-12px);
-        border-width: 0 rem(12px) rem(12px) rem(12px);
+        top: rem(-14px);
+        border-width: 0 rem(14px) rem(14px) rem(14px);
+    }
+    @include mq(large) {
+        top: rem(-19px);
+        border-width: 0 rem(19px) rem(19px) rem(19px);
+    }
+}
+
+.currentTurn {
+    display: none;
+    position: absolute;
+    bottom: rem(-23px);
+    font-size: rem(13px);
+    line-height: rem(16px);
+    letter-spacing: rem(5px);
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(large) {
+        display: initial;
     }
 }

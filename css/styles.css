@@ -311,7 +311,7 @@ template {
 /********************** Convert Pixes to Rems Function **********************/
 /********************** Media Querie Mixins **********************/
 /********************** Margin Placeholders **********************/
-.multiplayerTracker__mobile, .soloTracker, .board, .game, .mainMenu {
+.multiplayerTracker, .board, .game, .mainMenu {
   margin: 0 auto;
 }
 
@@ -404,6 +404,17 @@ button {
   .text9 {
     font-size: 3rem;
     line-height: 3.75rem;
+  }
+}
+
+.text80 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+@media (min-width: 1440px) {
+  .text80 {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -521,8 +532,33 @@ button {
 }
 @media (min-width: 768px) {
   .triangle {
-    top: -0.75rem;
-    border-width: 0 0.75rem 0.75rem 0.75rem;
+    top: -0.875rem;
+    border-width: 0 0.875rem 0.875rem 0.875rem;
+  }
+}
+@media (min-width: 1440px) {
+  .triangle {
+    top: -1.1875rem;
+    border-width: 0 1.1875rem 1.1875rem 1.1875rem;
+  }
+}
+
+.currentTurn {
+  display: none;
+  position: absolute;
+  bottom: -1.4375rem;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  letter-spacing: 0.3125rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1440px) {
+  .currentTurn {
+    display: initial;
   }
 }
 
@@ -661,7 +697,7 @@ button {
 
 .game {
   padding: 1.5rem;
-  max-width: 69.375rem;
+  max-width: 74.375rem;
 }
 @media (min-width: 768px) {
   .game {
@@ -739,12 +775,13 @@ button {
   justify-content: space-between;
   gap: 1.5625rem;
   max-width: 28.75rem;
-  margin-top: 6.375rem;
+  margin: 6.375rem auto 0;
 }
 @media (min-width: 768px) {
   .soloTracker {
     gap: 1.875rem;
     max-width: 33.75rem;
+    margin-top: 7.875rem;
   }
 }
 .soloTracker__item {
@@ -772,30 +809,81 @@ button {
   color: #304859;
 }
 
-.multiplayerTracker__mobile {
+.multiplayerTracker {
   display: flex;
+  justify-content: space-between;
   gap: 1.5rem;
   max-width: 28.75rem;
   margin-top: 6.375rem;
-  text-align: center;
 }
 @media (min-width: 768px) {
-  .multiplayerTracker__mobile {
-    display: none;
+  .multiplayerTracker {
+    gap: 0.6875rem;
+    max-width: 43.0625rem;
+    margin-top: 7.875rem;
   }
 }
-.multiplayerTracker__player {
+@media (min-width: 1440px) {
+  .multiplayerTracker {
+    gap: 1.875rem;
+    max-width: 69.375rem;
+    margin-top: 7rem;
+  }
+}
+
+.player {
   position: relative;
   width: 100%;
-  padding: 0.625rem 0.8125rem 0.5625rem 0.875rem;
-  background-color: #DFE7EC;
+  background-color: #BCCED9;
   border-radius: 0.3125rem;
+  text-align: center;
+  padding: 0.625rem 0.8125rem 0.5625rem 0.875rem;
 }
-.multiplayerTracker__header {
+@media (min-width: 768px) {
+  .player {
+    padding: 0.875rem 1rem 0.75rem;
+    border-radius: 0.625rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0625rem 1.5rem 0.9375rem 1.3125rem;
+  }
+}
+.player__mobileHeader {
   margin-bottom: 0.125rem;
   color: #7191A5;
 }
-.multiplayerTracker__subheader {
+@media (min-width: 768px) {
+  .player__mobileHeader {
+    display: none;
+  }
+}
+.player__header {
+  display: none;
+  color: #7191A5;
+}
+@media (min-width: 768px) {
+  .player__header {
+    display: block;
+    margin-bottom: 0.3125rem;
+  }
+}
+.player__subheader {
+  color: #304859;
+}
+
+.tracker {
+  background-color: #BCCED9;
+}
+.tracker__header {
+  color: #7191A5;
+}
+.tracker__subheader {
   color: #304859;
 }
 

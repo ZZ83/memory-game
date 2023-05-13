@@ -2,7 +2,7 @@
 
 .game {
     padding: rem(24px);
-    max-width: rem(1110px);
+    max-width: rem(1190px);
     @extend %margin-auto;
     @include mq(medium) {
         padding: rem(40px) rem(40px) rem(48px);
