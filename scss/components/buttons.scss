@@ -50,4 +50,9 @@
     &.-active {
         background-color: $secondary-dark-color;
     }
+
+    &.-modal {
+        height: rem(48px);
+    }
+
 }

@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.mobileMenuModal {
+    @extend %overlay;
+    @include mq(medium) {
+        display: none;
+    }
+    &__buttons {
+        display: grid;
+        gap: rem(16px);
+        width: calc(100% - rem(48px));
+        max-width: rem(460px);
+        padding: rem(24px);
+        background-color: $primary-color;
+        @extend %margin-auto;
+        @extend %br-10;
+    }
+}
