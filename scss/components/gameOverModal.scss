@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.gameOverModal {
+    @extend %overlay;
+    &__inner {
+        display: grid;
+        gap: rem(8px);
+        width: calc(100% - rem(48px));
+        max-width: rem(460px);
+        padding: rem(32px) rem(24px) rem(24px);
+        background-color: $primary-color;
+        @extend %margin-auto;
+        @extend %br-10;
+
+        @include mq(medium) {
+            gap: rem(16px);
+            max-width: rem(654px);
+            padding: rem(51px) rem(56px) rem(69px);
+        }
+    }
+    &__header,
+    &__subheader {
+        text-align: center;
+    }
+    &__header {
+        margin-bottom: rem(1px);
+        color: $primary-dark-color;
+    }
+    &__subheader {
+        margin-bottom: rem(16px);
+        color: $primary-text-color;
+        @include mq(medium) {
+            margin-bottom: rem(24px);
+        }
+    }
+    &__buttons {
+        display: grid;
+        gap: rem(16px);
+        margin-top: rem(16px);
+        color: $primary-text-color;
+        @include mq(medium) {
+            margin-top: rem(40px);
+            grid-template-columns: 1fr 1fr;
+            gap: rem(14px);
+            height: rem(52px);
+        }
+    }
+}

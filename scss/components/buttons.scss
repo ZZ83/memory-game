@@ -53,6 +53,14 @@
 
     &.-modal {
         height: rem(48px);
+        @include mq(medium) {
+            height: rem(52px);
+         }
     }
-
+    &.-setupNewGame {
+        color: $secondary-dark-color;
+        &:hover {
+            color: $primary-color;
+        }
+    }
 }

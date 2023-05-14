@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(11px) rem(16px) rem(12px);
+    background-color: $secondary-accent-color;
+    @extend %br-10;
+    @include mq(medium) {
+        padding: rem(17px) rem(32px) rem(15px);      
+    }
+    &__header,
+    &__subheader {
+        &.-winner {
+            color: $primary-color;
+        }
+    }
+    &__header {
+       
+        color: $primary-text-color;
+    }
+    &__subheader {
+        
+        color: $secondary-dark-color;
+    }
+    &.-winner {
+        background-color: $primary-dark-color;
+    }
+}
