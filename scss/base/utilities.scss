@@ -18,7 +18,7 @@
     } 
 }
 
-.text10 {
+.text-6xl {
     font-size:   rem(32px);
     line-height: rem(40px);
     @include mq(medium) {
@@ -27,7 +27,7 @@
     }
 }
 
-.text9 {
+.text-5xl {
     font-size:   rem(24px);
     line-height: rem(30px);
     @include mq(medium) {
@@ -36,7 +36,7 @@
     }
 }
 
-.text80 {
+.text-4xl {
     font-size:   rem(24px);
     line-height: rem(30px);
     @include mq(large) {
@@ -45,7 +45,7 @@
     }
 }
 
-.text8 {
+.text-3xl {
     font-size:   rem(24px);
     line-height: rem(30px);
     @include mq(medium) {
@@ -54,7 +54,7 @@
     }
 }
 
-.text7 {
+.text-2xl {
     font-size:   rem(20px);
     line-height: rem(25px);
     @include mq(medium) {
@@ -63,7 +63,7 @@
     }
 }
 
-.text6 {
+.text-xl {
     font-size:   rem(18px);
     line-height: rem(22px);
     @include mq(medium) {
@@ -72,7 +72,7 @@
     }
 }
 
-.text5 {
+.text-lg {
     font-size:   rem(18px);
     line-height: rem(22px);
     @include mq(medium) {
@@ -81,7 +81,7 @@
     }
 }
 
-.text4 {
+.text-md {
     font-size:   rem(16px);
     line-height: rem(20px);
     @include mq(medium) {
@@ -90,7 +90,16 @@
     }
 }
 
-.text3 {
+.text-sm {
+    font-size:   rem(15px);
+    line-height: rem(19px);
+    @include mq(medium) {
+        font-size:   rem(20px);
+        line-height: rem(25px);
+    }
+}
+
+.text-xs {
     font-size:   rem(15px);
     line-height: rem(19px);
     @include mq(large) {
@@ -99,7 +108,7 @@
     }
 }
 
-.text2 {
+.text-2xs{
     font-size:   rem(15px);
     line-height: rem(19px);
     @include mq(medium) {
@@ -108,7 +117,7 @@
     }
 }
 
-.text1 {
+.text-3xs {
     font-size:   rem(14px);
     line-height: rem(17px);
     @include mq(medium) {
@@ -117,7 +126,7 @@
     }
 }
 
-.text0 {
+.text-4xs {
     font-size:   rem(13px);
     line-height: rem(16px);
     @include mq(medium) {

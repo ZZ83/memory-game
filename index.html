@@ -13,41 +13,41 @@
 	</head>
 	<body>
 		<!-- <div>
-			<h1 class="text10">memory</h1>
+			<h1 class="text-6xl">memory</h1>
 			<div class="mainMenu">
 				<div class="selectMode">
-					<h2 class="selectMode__header">Select Theme</h2>
+					<h2 class="selectMode__header text-sm">Select Theme</h2>
 					<div class="selectMode__inner">
-						<button class="btn text4 -active">Numbers</button>
-						<button class="btn text4">Icons</button>
+						<button class="btn text-md -active">Numbers</button>
+						<button class="btn text-md">Icons</button>
 					</div>
 				</div>
 				<div class="selectMode">
-					<h2 class="selectMode__header">Number of Players</h2>
+					<h2 class="selectMode__header text-sm">Number of Players</h2>
 					<div class="selectMode__inner -player">
-						<button class="btn text4 -active">1</button>
-						<button class="btn text4">2</button>
-						<button class="btn text4">3</button>
-						<button class="btn text4">4</button>
+						<button class="btn text-md -active">1</button>
+						<button class="btn text-md">2</button>
+						<button class="btn text-md">3</button>
+						<button class="btn text-md">4</button>
 					</div>
 				</div>
 				<div class="selectMode">
-					<h2 class="selectMode__header">Grid Size</h2>
+					<h2 class="selectMode__header text-sm">Grid Size</h2>
 					<div class="selectMode__inner">
-						<button class="btn text4 -active">4x4</button>
-						<button class="btn text4">6x6</button>
+						<button class="btn text-md -active">4x4</button>
+						<button class="btn text-md">6x6</button>
 					</div>
 				</div>
-				<button class="btn -startGame -accent text6">Start Game</button>
+				<button class="btn -startGame -accent text-xl">Start Game</button>
 			</div>
 		</div> -->
 		<div class="game">
 			<header class="header">
 				<img class="logo" src="assets/logo.svg" alt="Logo">
-				<button class="btn -openMenu -accent  text4">Menu</button>
+				<button class="btn -openMenu -accent">Menu</button>
 				<div class="header__inner">
-					<button class="btn -restart -accent text5">Restart</button>
-					<button class="btn -newGame text5">New Game</button>
+					<button class="btn -restart -accent text-lg">Restart</button>
+					<button class="btn -newGame text-lg">New Game</button>
 				</div>
 			</header>
 			<main class="board -fourByFour">
@@ -109,72 +109,72 @@
 			<footer>
 				<div class="trackers -solo">
 					<div class="tracker -solo">
-						<h2 class="tracker__header    text2">Time</h2>
-						<h3 class="tracker__subheader text8">0:00</h3>
+						<h2 class="tracker__header    text-2xs">Time</h2>
+						<h3 class="tracker__subheader text-3xl">0:00</h3>
 					</div>
 					<div class="tracker -solo">
-						<h2 class="tracker__header    text2">Moves</h2>
-						<h3 class="tracker__subheader text8">0</h3>
+						<h2 class="tracker__header    text-2xs">Moves</h2>
+						<h3 class="tracker__subheader text-3xl">0</h3>
 					</div>
 				</div>
 				<!-- <div class="trackers -multiplayer">
 					<div class="tracker -multiplayer">
-						<h2 class="tracker__header    -mobile text2">P1</h2>
-						<h2 class="tracker__header    -player text3">Player 1</h2>
-						<h3 class="tracker__subheader  text80">0</h3>
+						<h2 class="tracker__header    -mobile text-2xs">P1</h2>
+						<h2 class="tracker__header    -player text-xs">Player 1</h2>
+						<h3 class="tracker__subheader  text-4xl">0</h3>
 					</div>
 					<div class="tracker -multiplayer">
-						<h2 class="tracker__header    -mobile text2">P2</h2>
-						<h2 class="tracker__header    -player text3">Player 2</h2>
-						<h3 class="tracker__subheader  text80">0</h3>
+						<h2 class="tracker__header    -mobile text-2xs">P2</h2>
+						<h2 class="tracker__header    -player text-xs">Player 2</h2>
+						<h3 class="tracker__subheader  text-4xl">0</h3>
 					</div>
 					<div class="tracker -multiplayer">
-						<h2 class="tracker__header    -mobile text2">P3</h2>
-						<h2 class="tracker__header    -player text3">Player 3</h2>
-						<h3 class="tracker__subheader  text80">0</h3>
+						<h2 class="tracker__header    -mobile text-2xs">P3</h2>
+						<h2 class="tracker__header    -player text-xs">Player 3</h2>
+						<h3 class="tracker__subheader  text-4xl">0</h3>
 					</div>
 					<div class="tracker -multiplayer">
-						<h2 class="tracker__header    -mobile text2">P4</h2>
-						<h2 class="tracker__header    -player text3">Player 4</h2>
-						<h3 class="tracker__subheader  text80">0</h3>
+						<h2 class="tracker__header    -mobile text-2xs">P4</h2>
+						<h2 class="tracker__header    -player text-xs">Player 4</h2>
+						<h3 class="tracker__subheader  text-4xl">0</h3>
 					</div>
 				</div> -->
 			</footer>
 		</div>
 		<!-- <div class="mobileMenuModal">
 			<div class="mobileMenuModal__buttons">
-				<button class="btn -modal -accent text5">Restart</button>
-				<button class="btn -modal text5">New Game</button>
-				<button class="btn -modal text5">Resume Game</button>
+				<button class="btn -modal -accent text-lg">Restart</button>
+				<button class="btn -modal text-lg">New Game</button>
+				<button class="btn -modal text-lg">Resume Game</button>
 			</div>
 		</div> -->
 
-		<div class="gameOverModal">
+		<!-- <div class="gameOverModal">
 			<div class="gameOverModal__inner">
-				<h2 class="gameOverModal__header    text9">Player 3 Wins!</h2>
-				<h3 class="gameOverModal__subheader text1">Game over! Here are the results…</h3>
+				<h2 class="gameOverModal__header    text-5xl">Player 3 Wins!</h2>
+				<h3 class="gameOverModal__subheader text-3xs">Game over! Here are the results…</h3>
 				<div class="results -winner">
-					<h4 class="results__header    -winner text0">Player 3 (winner!)</h4>
-					<h5 class="results__subheader -winner text7">6 Pairs</h5>
+					<h4 class="results__header    -winner text-4xs">Player 3 (winner!)</h4>
+					<h5 class="results__subheader -winner text-2xl">6 Pairs</h5>
 				</div>
 				<div class="results">
-					<h4 class="results__header    text0">Player 1 (winner!)</h4>
-					<h5 class="results__subheader text7">6 Pairs</h5>
+					<h4 class="results__header    text-4xs">Player 1 (winner!)</h4>
+					<h5 class="results__subheader text-2xl">6 Pairs</h5>
 				</div>
 				<div class="results">
-					<h4 class="results__header    text0">Player 2</h4>
-					<h5 class="results__subheader text7">3 Pairs</h5>
+					<h4 class="results__header    text-4xs">Player 2</h4>
+					<h5 class="results__subheader text-2xl">3 Pairs</h5>
 				</div>
 				<div class="results">
-					<h4 class="results__header    text0">Player 4</h4>
-					<h5 class="results__subheader text7">1 Pairs</h5>
+					<h4 class="results__header    text-4xs">Player 4</h4>
+					<h5 class="results__subheader text-2xl">1 Pairs</h5>
 				</div>
 				<div class="gameOverModal__buttons">
-					<button class="btn -modal -accent       text5">Restart</button>
-					<button class="btn -modal -setupNewGame text5">Setup New Game</button>
+					<button class="btn -modal -accent       text-lg">Restart</button>
+					<button class="btn -modal -setupNewGame text-lg">Setup New Game</button>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</body>
 </html>
 

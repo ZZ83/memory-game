@@ -397,133 +397,144 @@ button {
   }
 }
 
-.text10 {
+.text-6xl {
   font-size: 2rem;
   line-height: 2.5rem;
 }
 @media (min-width: 768px) {
-  .text10 {
+  .text-6xl {
     font-size: 2.5rem;
     line-height: 3.125rem;
   }
 }
 
-.text9 {
+.text-5xl {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 @media (min-width: 768px) {
-  .text9 {
+  .text-5xl {
     font-size: 3rem;
     line-height: 3.75rem;
   }
 }
 
-.text80 {
+.text-4xl {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 @media (min-width: 1440px) {
-  .text80 {
+  .text-4xl {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-.text8 {
+.text-3xl {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 @media (min-width: 768px) {
-  .text8 {
+  .text-3xl {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-.text7 {
+.text-2xl {
   font-size: 1.25rem;
   line-height: 1.5625rem;
 }
 @media (min-width: 768px) {
-  .text7 {
+  .text-2xl {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-.text6 {
+.text-xl {
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
 @media (min-width: 768px) {
-  .text6 {
+  .text-xl {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-.text5 {
+.text-lg {
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
 @media (min-width: 768px) {
-  .text5 {
+  .text-lg {
     font-size: 1.25rem;
     line-height: 1.5625rem;
   }
 }
 
-.text4 {
+.text-md {
   font-size: 1rem;
   line-height: 1.25rem;
 }
 @media (min-width: 768px) {
-  .text4 {
+  .text-md {
     font-size: 1.625rem;
     line-height: 2rem;
   }
 }
 
-.text3 {
+.text-sm {
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+}
+@media (min-width: 768px) {
+  .text-sm {
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+  }
+}
+
+.text-xs {
   font-size: 0.9375rem;
   line-height: 1.1875rem;
 }
 @media (min-width: 1440px) {
-  .text3 {
+  .text-xs {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-.text2 {
+.text-2xs {
   font-size: 0.9375rem;
   line-height: 1.1875rem;
 }
 @media (min-width: 768px) {
-  .text2 {
+  .text-2xs {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-.text1 {
+.text-3xs {
   font-size: 0.875rem;
   line-height: 1.0625rem;
 }
 @media (min-width: 768px) {
-  .text1 {
+  .text-3xs {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-.text0 {
+.text-4xs {
   font-size: 0.8125rem;
   line-height: 1rem;
 }
 @media (min-width: 768px) {
-  .text0 {
+  .text-4xs {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
@@ -598,14 +609,10 @@ button {
 .selectMode__header {
   margin-bottom: 0.6875rem;
   color: #7191A5;
-  font-size: 0.9375rem;
-  line-height: 1.1875rem;
 }
 @media (min-width: 768px) {
   .selectMode__header {
     margin-bottom: 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5625rem;
   }
 }
 .selectMode__inner {
