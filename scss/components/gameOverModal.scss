@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .gameOverModal {
+    display: none;
     @extend %overlay;
     &__inner {
         display: grid;

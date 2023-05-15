@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .game {
+    display: none;
     padding: rem(24px);
     max-width: rem(1190px);
     @extend %margin-auto;

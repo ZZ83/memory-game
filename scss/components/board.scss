@@ -7,6 +7,7 @@
     @extend %margin-auto;
 
     &.-fourByFour {
+        display: none;
         grid-template-columns: repeat(4, 1fr);
         gap: rem(12px);
         @include mq(medium) {
@@ -20,6 +21,7 @@
     }
     
     &.-sixBySix {
+        display: none;
         grid-template-columns: repeat(6, 1fr);
         gap: rem(9px);
         @include mq(medium) {

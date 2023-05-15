@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .mobileMenuModal {
+    display: none;
     @extend %overlay;
     @include mq(medium) {
         display: none;
