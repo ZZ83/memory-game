@@ -1,14 +1,18 @@
 @use '../abstracts' as *;
 
 .mainMenu {
-    width: calc(100% - rem(48px));
-    max-width: rem(460px);
-    padding: rem(24px);
-    background-color: $primary-color;
-    @extend %margin-auto;
-    @extend %br-10;
-    @include mq(medium) {
-        max-width: rem(654px);
-        padding: rem(56px);
-    } 
+    background-color: $primary-dark-color;
+    height: 100vh;
+    &__inner {
+        width: calc(100% - rem(48px));
+        max-width: rem(460px);
+        padding: rem(24px);
+        background-color: $primary-color;
+        @extend %margin-auto;
+        @extend %br-10;
+        @include mq(medium) {
+            max-width: rem(654px);
+            padding: rem(56px);
+        } 
+    }
 }

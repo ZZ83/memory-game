@@ -7,10 +7,11 @@
 }
 
 body {
-    background-color: $primary-dark-color;
+    background-color: $primary-color;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -19,15 +20,15 @@ h5 {
 }
 
 h1 {
-    margin: rem(80px) auto rem(45px);
+    padding: rem(80px) 0 rem(45px);
     color: $primary-color;
     text-align: center;
     @include mq(medium) {
-        margin-top: rem(169px);
-        margin-bottom: rem(78px);
+        padding-top: rem(169px);
+        padding-bottom: rem(78px);
     }
     @include mq(large) {
-        margin-top: rem(154px);
+        padding-top: rem(154px);
     }
 }
 

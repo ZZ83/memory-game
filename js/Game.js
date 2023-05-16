@@ -1,13 +1,15 @@
 import { Board } from "./Board.js";
 
 export class Game {
-    constructor() {
-      this.board = new Board(); 
+    constructor(settings) {
+        this.settings = settings;
+        this.board = new Board(); 
     }
 
 
    
     startGame() {
-        console.log("Game Started!")
+        this.board.showGameBoard();
+        console.log(this.settings);
     }
 }
