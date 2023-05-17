@@ -5,11 +5,8 @@ export class Game {
         this.settings = settings;
         this.board = new Board(); 
     }
-
-
-   
     startGame() {
         this.board.showGameBoard();
-        console.log(this.settings);
+        console.log(this.board.shuffleBoard(this.board.board4x4));
     }
 }
